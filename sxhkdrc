@@ -1,0 +1,70 @@
+## WM Independent Hotkeys
+
+# Terminal Emulator
+super + t
+	hyper
+
+# Program Launcher
+super + r
+	dmenu_run
+
+# Web Browser
+super + f
+	firefox
+
+# Code Editor
+super + c
+	code
+
+# Bspwm Reload
+super + Escape
+	bspc wm -r
+
+# Sxhkd Reload
+super + shift + Escape
+	pkill -USR1 -x sxhkd 
+
+
+## Bspwm Hotkeys
+
+# Close / Kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# Tiled / Monocle Layout
+super + d
+	bspc desktop -l next
+
+
+## Focus and Swap
+
+# Focus / Move Window
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Cicle Windows
+alt + Tab
+	bspc node -f next.local.!hidden.window
+
+# Cicle Desktops
+super + Tab
+	bspc desktop -f next.local
+
+# Sent to Desktop
+super + alt + {Left,Right}
+	bspc node -d {prev,next}.local
+
+
+## Preselect
+
+# Preselect Direction
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+
+# Cancel Preselection
+super + space
+	bspc node -p cancel
+
+# Cancel Desktop Preselection
+super + alt + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
