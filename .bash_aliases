@@ -20,7 +20,11 @@ alias aptl='sudo apt list --installed'
 alias net='nmtui'
 alias netrst='sudo service NetworkManager restart'
 
+alias volup='amixer set 'Master' 5%+'
+alias voldn='amixer set 'Master' 5%-'
+
 alias bashedit='nano ~/.bash_aliases'
 alias hyperedit='nano ~/.hyper.js'
+alias wmedit='nano ~/.config/bspwm/bspwmrc'
+alias baredit='nano ~/.config/polybar/config.ini'
 alias keyedit='nano ~/.config/sxhkd/sxhkdrc'
-alias bspedit='nano ~/.config/bspwm/bspwmrc'
