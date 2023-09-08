@@ -50,9 +50,6 @@
 
 <br>
 
-> ## Web Browser Installation
-> - Execute: ```sudo apt install firefox-esr```
-
 > ## Final Steps
 > - Install git and clone this repository
 > - Change the system setup files for those in this repository
