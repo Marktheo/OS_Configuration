@@ -32,7 +32,7 @@
 <br>
 
 > ## Window Manager Installation and Setup
-> - Execute: ```sudo apt install bspwm suckless-tools sxhkd feh```
+> - Execute: ```sudo apt install bspwm suckless-tools sxhkd polybar feh```
 > - Execute: ```mkdir -p ~/.config/{bspwm,sxhkd,dunst}```
 > - Execute: ```install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc```
 > - Execute: ```install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc```
@@ -47,6 +47,11 @@
 
 > ## Network Manager Installation
 > - Execute: ```sudo apt install network-manager```
+
+<br>
+
+> ## Audio Manager Installation
+> - Execute: ```sudo apt install pulseaudio alsa-utils pavucontrol volumeicon-alsa pamixer```
 
 <br>
 
