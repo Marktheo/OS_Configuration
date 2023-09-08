@@ -9,8 +9,8 @@ super + r
 	dmenu_run
 
 # Web Browser
-super + f
-	firefox
+super + w
+	brave-browser
 
 # Code Editor
 super + c
@@ -39,16 +39,16 @@ super + d
 ## Focus and Swap
 
 # Focus / Move Window
-super + {_,shift + }{Left,Down,Up,Right}
-	bspc node -{f,s} {west,south,north,east}
+super + shift + {Left,Down,Up,Right}
+	bspc node -s {west,south,north,east}
 
 # Cicle Windows
-alt + Tab
+super + Tab
 	bspc node -f next.local.!hidden.window
 
 # Cicle Desktops
-super + Tab
-	bspc desktop -f next.local
+super + {Left,Right}
+	bspc desktop -f {prev,next}.local
 
 # Sent to Desktop
 super + alt + {Left,Right}
@@ -64,7 +64,3 @@ super + ctrl + {Left,Down,Up,Right}
 # Cancel Preselection
 super + space
 	bspc node -p cancel
-
-# Cancel Desktop Preselection
-super + alt + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
