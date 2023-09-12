@@ -46,7 +46,12 @@
 <br>
 
 > ## Network Manager Installation
-> - Execute: ```sudo apt install network-manager```
+> - Execute: ```sudo apt install network-manager iwd```
+> - In /etc/NetworkManager/NetworkManager.conf: ```[device] \n wifi.scan-rand-mac-address=no```
+> - Restart NetworkManager service
+> - Execute: ```systemctl --now disable wpa_supplicant```
+> - Execute: ```systemctl --now enable iwd```
+> - In /etc/iwd/main.conf: ```[General] \n EnableNetworkConfiguration=true && [Network] \n EnableIPv6=true```
 
 <br>
 
