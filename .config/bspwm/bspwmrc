@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd & polybar &
 
-bspc monitor -d 1 2 3 4
+bspc monitor -d A¹ B² C³ D⁴
 
 bspc config window_gap            5
 
