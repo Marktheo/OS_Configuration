@@ -2,7 +2,7 @@
 
 # Terminal Emulator
 super + t
-	hyper
+	rxvt-unicode
 
 # Program Launcher
 super + r
