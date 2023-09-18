@@ -1,7 +1,7 @@
-# OS_Configuration
+# TheoDebian
 
 > ## Description
-> This repository is dedicated for storing the configuration files and setup of my favourite Linux distro.
+> This repository is dedicated for storing my own flavour of Debian 12.
 
 <br>
 
@@ -33,9 +33,8 @@
 
 > ## Window Manager Installation and Setup
 > - Execute: ```sudo apt install bspwm suckless-tools sxhkd polybar feh```
-> - Execute: ```mkdir -p ~/.config/{bspwm,sxhkd,dunst}```
-> - Execute: ```install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc```
-> - Execute: ```install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc```
+> - Execute: ```mkdir -p ~/.config/{bspwm,sxhkd,polybar}```
+> - Copy the configuration files and make them executable.
 
 <br>
 
