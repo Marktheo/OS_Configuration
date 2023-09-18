@@ -60,6 +60,4 @@
 <br>
 
 > ## Final Steps
-> - Install git and clone this repository
-> - Change the system setup files for those in this repository
-> - Reboot and enjoy!
+> - Execute: ```sudo apt install rxvt-unicode lf```
